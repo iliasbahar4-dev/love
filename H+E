@@ -17,7 +17,7 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            color: #f4c2c2; /* Baby Pink */
+            color: #F527DA; /* Baby Pink */
             text-align: center;
             padding: 20px;
         }
@@ -70,7 +70,7 @@
 <body>
     <div class="container">
         <div class="equation">Η + Ε =</div>
-        <div class="message">ΛΟΒ ΦΟΡ ΕΒΕΡ ΕΝΤ ΕΒΕΡ<br>ΕΝΤ ΕΒΕΡ<br>ΕΝΤ ΕΒΕΡ</div>
+        <div class="message"> <br><br> ΛΟΒ ΦΟΡ ΕΒΕΡ ΕΝΤ ΕΒΕΡ<br>ΕΝΤ ΕΒΕΡ<br>ΕΝΤ ΕΒΕΡ</div>
     </div>
 </body>
 </html>
