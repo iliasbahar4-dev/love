@@ -6,31 +6,42 @@
     <title>Love Message</title>
     <style>
         body {
-            background: linear-gradient(45deg, #ff6b6b, #ff8e8e, #ffb6b6);
-            font-family: Arial, sans-serif;
+            background: black;
+            font-family: "Times New Roman", Times, serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            color: white;
+            color: #ff69b4; /* Hot Pink */
             text-align: center;
         }
         .message {
-            font-size: 2.5em;
+            font-size: 3em;
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4;
             padding: 20px;
-            animation: pulse 2s infinite;
+            animation: glow 1.5s ease-in-out infinite alternate;
         }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        .equation {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px #ff69b4;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+            }
+            to {
+                text-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="message">Λοβ φορ εβερ εν εβερ</div>
+    <div class="container">
+        <div class="equation">Η + Ε =</div>
+        <div class="message">ΛΟΒ ΦΟΡ ΕΒΕΡ ΕΝΤ ΕΒΕΡ<br>ΕΝΤ ΕΒΕΡ<br>ΕΝΤ ΕΒΕΡ</div>
+    </div>
 </body>
 </html>
