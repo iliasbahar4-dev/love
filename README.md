@@ -1,5 +1,3 @@
-# love
-<!DOCTYPE html>
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +6,7 @@
     <style>
         body {
             background: black;
-            font-family: "Times New Roman", Times, serif;
+            font-family: "Times New Roman", Times;
             display: flex;
             justify-content: center;
             align-items: center;
