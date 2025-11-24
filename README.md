@@ -17,7 +17,7 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            color: #f4c2c2; /* Baby Pink */
+            color: #D344DB; /* Baby Pink */
             text-align: center;
             padding: 20px;
         }
@@ -48,8 +48,7 @@
                 text-shadow: 0 0 20px #f4c2c2, 0 0 30px #f4c2c2, 0 0 40px #f4c2c2;
             }
         }
-
-        /* Mobile optimization */
+ Mobile optimization
         @media (max-width: 480px) {
             .equation {
                 margin-bottom: 15px;
@@ -59,13 +58,6 @@
             }
         }
 
-        /* Prevent zoom on iOS */
-        @media (max-width: 768px) {
-            body {
-                touch-action: manipulation;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container">
