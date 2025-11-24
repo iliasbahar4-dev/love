@@ -1,3 +1,5 @@
+
+
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +19,7 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
-            color: #D344DB; /* Baby Pink */
+            color: #D344DB;
             text-align: center;
             padding: 20px;
         }
@@ -29,26 +31,26 @@
             font-size: clamp(2.5em, 8vw, 4em);
             font-weight: bold;
             margin-bottom: 20px;
-            text-shadow: 0 0 15px #f4c2c2;
+            text-shadow: 0 0 15px #D344DB;
             line-height: 1.2;
         }
         .message {
             font-size: clamp(1.5em, 6vw, 2.5em);
             font-weight: bold;
-            text-shadow: 0 0 20px #f4c2c2, 0 0 30px #f4c2c2;
+            text-shadow: 0 0 20px #D344DB, 0 0 30px #D344DB;
             padding: 15px;
             animation: glow 1.5s ease-in-out infinite alternate;
             line-height: 1.4;
         }
         @keyframes glow {
             from {
-                text-shadow: 0 0 10px #f4c2c2, 0 0 20px #f4c2c2;
+                text-shadow: 0 0 10px #D344DB, 0 0 20px #D344DB;
             }
             to {
-                text-shadow: 0 0 20px #f4c2c2, 0 0 30px #f4c2c2, 0 0 40px #f4c2c2;
+                text-shadow: 0 0 20px #D344DB, 0 0 30px #D344DB, 0 0 40px #D344DB;
             }
         }
- Mobile optimization
+        /* Mobile optimization */
         @media (max-width: 480px) {
             .equation {
                 margin-bottom: 15px;
@@ -57,7 +59,13 @@
                 padding: 10px;
             }
         }
-
+        /* Prevent zoom on iOS */
+        @media (max-width: 768px) {
+            body {
+                touch-action: manipulation;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
